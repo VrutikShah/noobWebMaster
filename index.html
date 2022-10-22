@@ -15,10 +15,12 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">The Job Description:</a>
+      
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -31,7 +33,7 @@
   </nav>
     
     <header class="page-header">
-        <div class="container conta align-items-center">
+        <div class="container container1 align-items-center">
 
             <div class="row align-items-center justify-content-center container1">
                 <img src="assets/img3.jpeg"  style="width: 90vw; height: 50vw" alt="Header image">
@@ -51,7 +53,7 @@
     </div>
         
     <!-- Image Gallery -->
-    <div class="row justify-content-center desk-img" style=" margin-top: 10vw; margin-left: 14vw; margin-right: 14vw;">
+    <div class="row justify-content-center desk-img" style=" margin-top: 10vw; margin-left: 14vw; margin-right: 14vw; margin-bottom: 10vw;">
       <div class="column">
         <img src="assets/img1.jpeg" alt="col2"  style="width: 20vw; height: 30vw; object-fit: cover;object-position: 0% 0;">
       </div>
@@ -65,10 +67,13 @@
     </div>
     
     <!-- Carousal For Mobile Screens -->
-    <div id="carouselExampleSlidesOnly" class="carousel slide mobile-img page-body" data-bs-ride="carousel">
+    <div id="carouselExampleSlidesOnly" class="carousel slide mobile-img page-body" data-bs-ride="carousel" style="position: relative; margin-bottom: -15vh">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="assets/img1.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img5.jpeg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
           <img src="assets/img2.jpeg" class="d-block w-100" alt="...">
@@ -78,8 +83,96 @@
         </div>
       </div>
     </div>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/bootstrap.js"></script>
+    
+    
+    <div class="page-body2">
+      <div class="row">
+        <div class="col-5">
+          <h2 class="head2">Yosemite</h2>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+        </div>
+        <div class="col-5">
+          <h2 class="head2">El Capitan</h2>
+          But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+        </div>
+      </div>
+      <div class="row" style="margin-top: min(75px,3vh)">
+        <div class="col-5">
+          <h2 class="head2">High Sierra</h2>
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+        </div>
+        <div class="col-5">
+          <h2 class="head2">Mojave</h2>
+          On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue
+        </div>
+      </div>
+    </div>
+    
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#2b2c2e; margin-top: 10vw;">
+      <div class="container text3">
+        <a class="navbar-brand" href="">
+          <!-- <button onclick="toggle(this);">Hide image</button> -->
+        <button type="button"
+          onclick="show()" id="Rick">
+          Show Image
+        </button>
+          <img id="mrAstley" src="assets/footer.gif" width="40" height="45" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#FooterNavbar" aria-controls="FooterNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="FooterNavbar">
+          <div class="navbar-nav">
+            <a class="nav-link active" style="color: white;" aria-current="page" href="#">Facebook</a>
+            <a class="nav-link" style="color: white;" href="#">Email</a>
+            <a class="nav-link" style="color: white;" href="#">Resume</a>
+            <a class="nav-link" style="color: white;" href="#">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <script>
+      var typed = new Typed('.auto-input', {strings: ['First ^1000 sentence.', 'Second sentence.']});
+    </script>
+
+    <script>
+    function show() {
+        document.getElementById('mrAstley')
+                .style.display = "block";
+        document.getElementById('Rick')
+                .style.display = "none";
+    }
+    </script>
+
+    <script>
+      let toggle = button => {
+        let element = document.getElementById("mrAstley");
+        let hidden = element.getAttribute("hidden");
+        
+        if (hidden) {
+          element.removeAttribute("hidden");
+          img.innerText = "Hide image";
+        } else {
+          element.setAttribute("hidden", "hidden");
+          img.innerText = "Show image";
+        }
+      }
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 </body>
 </html>
+
+
+
+<!-- 
+To do
+1. Navbar size
+2. Navbar collapse
+3. Rickroll text
+4. rickroll hide
+
+ -->
