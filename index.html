@@ -13,9 +13,9 @@
 
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" >
     <div class="container">
-      <a class="navbar-brand" href="#">The Job Description:</a>
+      <a class="navbar-brand" href="#" style="font-size: min(25px,4vw);">The Job Application:</a>
       
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -52,6 +52,7 @@
       </div>
     </div>
         
+
     <!-- Image Gallery -->
     <div class="row justify-content-center desk-img" style=" margin-top: 10vw; margin-left: 14vw; margin-right: 14vw; margin-bottom: 10vw;">
       <div class="column">
@@ -84,7 +85,7 @@
       </div>
     </div>
     
-    
+
     <div class="page-body2">
       <div class="row">
         <div class="col-5">
@@ -108,29 +109,32 @@
       </div>
     </div>
     
+    
+
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#2b2c2e; margin-top: 10vw;">
       <div class="container text3">
-        <a class="navbar-brand" href="">
-          <!-- <button onclick="toggle(this);">Hide image</button> -->
-        <button type="button"
-          onclick="show()" id="Rick">
-          Show Image
-        </button>
-          <img id="mrAstley" src="assets/footer.gif" width="40" height="45" alt="">
+        <a class="navbar-brand">
+        
+          <button type="button" onclick="show()" id="Rick" style=" border-radius: 10px;">
+              <b style="font-size: min(25px, 2vw);">What's this?</b>
+          </button>
+
+          <!-- <a href="something" class="button2">What's this?</a> -->
+          
+          <img class="img-hide" id="mrAstley" display:hidden src="assets/footer.gif" width="40" height="45" alt="">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#FooterNavbar" aria-controls="FooterNavbar" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="FooterNavbar">
           <div class="navbar-nav">
-            <a class="nav-link active" style="color: white;" aria-current="page" href="#">Facebook</a>
-            <a class="nav-link" style="color: white;" href="#">Email</a>
-            <a class="nav-link" style="color: white;" href="#">Resume</a>
-            <a class="nav-link" style="color: white;" href="#">LinkedIn</a>
+            <div class="row footer-text">
+              <div class="col"><a class="nav-link active" style="color: white;" aria-current="page" href="#">Facebook</a></div>
+              <div class="col"><a class="nav-link" style="color: white;" href="#">Email</a></div>
+              <div class="col"><a class="nav-link" style="color: white;" href="#">Resume</a></div>
+              <div class="col"><a class="nav-link" style="color: white;" href="#">LinkedIn</a></div>
+            </div>
           </div>
-        </div>
       </div>
     </nav>
+
+
 
     <script>
       var typed = new Typed('.auto-input', {strings: ['First ^1000 sentence.', 'Second sentence.']});
@@ -143,21 +147,6 @@
         document.getElementById('Rick')
                 .style.display = "none";
     }
-    </script>
-
-    <script>
-      let toggle = button => {
-        let element = document.getElementById("mrAstley");
-        let hidden = element.getAttribute("hidden");
-        
-        if (hidden) {
-          element.removeAttribute("hidden");
-          img.innerText = "Hide image";
-        } else {
-          element.setAttribute("hidden", "hidden");
-          img.innerText = "Show image";
-        }
-      }
     </script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.js"></script>
@@ -172,7 +161,6 @@
 To do
 1. Navbar size
 2. Navbar collapse
-3. Rickroll text
-4. rickroll hide
-
+6. Navbar background color
+7. write README file
  -->
