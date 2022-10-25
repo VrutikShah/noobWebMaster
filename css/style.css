@@ -12,6 +12,18 @@ body{
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(46,46,180,1) 28%, rgba(3,110,251,0.8001794467787114) 100%, rgba(27,95,173,1) 100%);
 }
 
+.page-style{
+  width: vw;
+  height: 5vw;
+  border-radius: 5vw;
+}
+
+u {
+  padding-bottom:10px;
+  text-decoration:none;
+  border-bottom:1px solid #000;
+}
+
 .page-header{
     margin-top: 3.5rem;
     font-size: 1.25rem;
@@ -136,7 +148,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(46,46,180,1) 28%, rgb
   }
 
 .footer-text{
-  font-size: min(25px,1vw);
+  font-size: min(25px,2vw);
 }
 
   .head2{
